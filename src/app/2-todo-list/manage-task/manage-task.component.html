@@ -1,0 +1,4 @@
+<app-task-list [taskList]="tasks" (taskUpdate)="updateCompleteTask($event)"></app-task-list>
+<app-add-task (newTask)="updateTask($event)"></app-add-task>
+
+<app-complete-task [completedTasks]="completedTasks"></app-complete-task>

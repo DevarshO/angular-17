@@ -1,0 +1,7 @@
+<h1>Student List {{myName}}</h1>
+<ul>
+    @for (student of studentData; track $index) {
+    <app-list [student]=student (name)="myName = $event"></app-list>
+    }
+</ul>
+<!-- How to pass static value in student because I can't able to assign static string  -->

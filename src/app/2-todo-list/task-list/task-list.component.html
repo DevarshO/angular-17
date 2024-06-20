@@ -1,0 +1,8 @@
+<div>
+    @for (task of taskList; track $index) {
+    <h2 style="display: inline;">{{$index + 1}}. {{task}} &nbsp;&nbsp;&nbsp;</h2>
+    <button (click)="updateTask($index)">Mark Done</button>
+    <br>
+    <br>
+    }
+</div>
