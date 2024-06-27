@@ -1,0 +1,17 @@
+.box {
+    height: auto;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 50px 0;
+    display: inline-block;
+    margin: auto 20px;
+}
+
+.txt {
+    font-size: 40px;
+}
+
+.hide-block {
+    display: none !important;
+}

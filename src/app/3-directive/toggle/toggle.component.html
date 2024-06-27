@@ -1,0 +1,17 @@
+<div class="box" [ngStyle]="{backgroundColor: isGreen ? 'green' : 'red'}">
+    <p class="txt" [ngStyle]="{color: isGreen ? 'black' : 'white'}">The box Changes</p>
+</div>
+<div class="box" [ngStyle]="{backgroundColor: color}">
+    <p class="txt">Color Change</p>
+</div>
+<div class="box" [ngStyle]="{backgroundColor: assignColor}">
+    <p class="txt">Color Change</p>
+</div>
+
+<br><br>
+<label for="div">Change Div</label>
+:- <input type="checkbox" [(ngModel)]="isGreen" id="div">
+<br><br>
+<label for="color">Select Color</label>
+:- <input type="text" [(ngModel)]="color" id="color">
+<button (click)="changeColor(color)">Submit</button>
