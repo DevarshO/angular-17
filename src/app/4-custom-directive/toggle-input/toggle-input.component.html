@@ -1,0 +1,8 @@
+<div class="box" appToggleInput [txtColor]="inputColor">
+    <p class="txt">The box Changes</p>
+</div>
+<div class="box1" appToggleInput [submitColor]="submitColor">
+    <p class="txt">The box Changes</p>
+</div>
+<input type="text" [(ngModel)]="inputColor" />
+<button (click)="changeColor()">Submit</button>
